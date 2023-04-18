@@ -1,0 +1,9 @@
+ --> wahWahEffectSystem_pkg
+wahWahEffectSystem_tc --> wahWahEffectSystem_tc
+wahWahEffect/wahWahEffectSystem/stateVariableFilter/Fc --> Fc
+wahWahEffect/wahWahEffectSystem/stateVariableFilter/Q1 --> Q1
+wahWahEffect/wahWahEffectSystem/stateVariableFilter/F1/Sine HDL Optimized --> Sine_HDL_Optimized
+wahWahEffect/wahWahEffectSystem/stateVariableFilter/F1 --> F1
+wahWahEffect/wahWahEffectSystem/stateVariableFilter --> stateVariableFilter
+wahWahEffect/wahWahEffectSystem/wetDryMixer --> wetDryMixer
+wahWahEffect/wahWahEffectSystem --> wahWahEffectSystem

@@ -1,0 +1,10 @@
+open_system('wahWahEffect');
+open_system('gm_wahWahEffect');
+cs.HiliteType = 'user2';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'gray';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_wahWahEffect/wahWahEffectSystem/stateVariableFilter/Fc/Add1', 'user2');
+annotate_port('gm_wahWahEffect/wahWahEffectSystem/stateVariableFilter/Fc/Add1', 1, 1, 'Obstacle to clock-rate pipelining');
+hilite_system('wahWahEffect/wahWahEffectSystem/stateVariableFilter/Fc/Add1', 'user2');
+annotate_port('wahWahEffect/wahWahEffectSystem/stateVariableFilter/Fc/Add1', 1, 1, 'Obstacle to clock-rate pipelining');

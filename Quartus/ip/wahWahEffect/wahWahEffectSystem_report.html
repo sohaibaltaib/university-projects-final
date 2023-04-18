@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="https://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Check Report for 'wahWahEffect/wahWahEffectSystem'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/docscripts.js"></script>
+        
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+<h1>HDL Code Generation Check Report for 'wahWahEffect/wahWahEffectSystem'
+<a href="matlab:open_system('wahWahEffect/wahWahEffectSystem');">open model 'wahWahEffect/wahWahEffectSystem'</a><BR>
+Generated on 2023-04-17 20:14:49</h1>
+<H2>HDL check for 'wahWahEffect' complete with 0 errors, 2 warnings, and 6 messages.</H2><BR>
+<H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
+<TABLE>
+<TR><TD> <B>Simulink Blocks and resources</B> </TD><TD> <B>Level</B> </TD><TD> <B>Description</B> </TD></TR><TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:InlineConfigsDisabled" href="matlab:hilite(get_param(char([119 97 104 87 97 104 69 102 102 101 99 116]),'object'),'none');open_system(char([119 97 104 87 97 104 69 102 102 101 99 116]))">wahWahEffect</a>
+</TD>
+<TD>Warning</TD>
+<TD>Inline VHDL configurations have been disabled. The generated VHDL code may require an externally supplied Configuration Declaration in order to be fully elaborated by a third-party downstream tool.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<div alt="hdlcoder:validate:AnnotationTextI18N">wahWahEffect/wahWahEffectSystem/stateVariableFilter/F1/				
+
+
+			    Tuning Coefficient F1
+
+				F1 = 2sin(π*fc/fs) 
+
+
+
+</div>
+</TD>
+<TD>Warning</TD>
+<TD>Annotation 'wahWahEffect/wahWahEffectSystem/stateVariableFilter/F1/				
+
+
+			    Tuning Coefficient F1
+
+				F1 = 2sin(π*fc/fs) 
+
+
+
+' in the model 'wahWahEffect' contains one or more non-ASCII characters. Non-ASCII characters in generated HDL code may interfere with downstream tools for synthesis, lint etc. To eliminate this warning, update the annotation to be completely ASCII text.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:workflow:AdaptivePipelineOffMessage" href="matlab:hilite(get_param(char([119 97 104 87 97 104 69 102 102 101 99 116]),'object'),'none');open_system(char([119 97 104 87 97 104 69 102 102 101 99 116]))">wahWahEffect</a>
+</TD>
+<TD>Message</TD>
+<TD><a href="matlab:configset.internal.open('wahWahEffect','AdaptivePipelining')">'AdaptivePipelining'</a> is set to 'Off' for the model. 'AdaptivePipelining' can improve the achievable clock frequency and reduce the area usage on FPGA boards. To enable adaptive pipelining, please set the option to 'On'. When adaptive pipelining is enabled, it inserts pipeline registers to create patterns that efficiently map blocks to DSP units on the target FPGA device.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:workflow:LUTMapToRAMOffMessage" href="matlab:hilite(get_param(char([119 97 104 87 97 104 69 102 102 101 99 116]),'object'),'none');open_system(char([119 97 104 87 97 104 69 102 102 101 99 116]))">wahWahEffect</a>
+</TD>
+<TD>Message</TD>
+<TD><a href="matlab:configset.internal.open('wahWahEffect','LUTMapToRAM')">'LUTMapToRAM'</a> is set to 'On' for the model. This option is used to map lookup tables to a block RAM in hardware.  To disable pipeline insertion for mapping lookup tables to RAM, please set the option to 'Off'.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:optimization:CRPInFeedbackUnderbudget" href="matlab:hilite(get_param(char([119 97 104 87 97 104 69 102 102 101 99 116]),'object'),'none');open_system(char([119 97 104 87 97 104 69 102 102 101 99 116]))">wahWahEffect</a>
+</TD>
+<TD>Message</TD>
+<TD>Clock-rate pipelining identified at least one feedback loop which does not utilize the full latency budget. Oversampling factor is set to '2048', but the minimum oversampling factor needed for the design is '1'. To reduce unnecessary clock cycles, either <a href="matlab:configset.internal.open('wahWahEffect/wahWahEffectSystem','Oversampling')">lower the oversampling factor</a> to reduce the latency budget or add optimizations that increase latency like pipelining and serialization in your design to use the full latency budget.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:hdldisp:GeneratingCRPHiliteScript" href="matlab:run('hdl_prj\hdlsrc\wahWahEffect\highlightClockRatePipelining')">hdl_prj\hdlsrc\wahWahEffect\highlightClockRatePipelining.m</a>
+</TD>
+<TD>Message</TD>
+<TD>Clock-rate pipelining results can be diagnosed by running this script: <a href="matlab:run('hdl_prj\hdlsrc\wahWahEffect\highlightClockRatePipelining')">hdl_prj\hdlsrc\wahWahEffect\highlightClockRatePipelining.m</a></TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:hdldisp:GeneratingLUTPipeliningDiagnosticHiliteScript" href="matlab:run('hdl_prj\hdlsrc\wahWahEffect\highlightLUTPipeliningDiagnostic')">hdl_prj\hdlsrc\wahWahEffect\highlightLUTPipeliningDiagnostic.m</a>
+</TD>
+<TD>Message</TD>
+<TD>To highlight lookup tables mapped to RAM, click the following MATLAB script: <a href="matlab:run('hdl_prj\hdlsrc\wahWahEffect\highlightLUTPipeliningDiagnostic')">hdl_prj\hdlsrc\wahWahEffect\highlightLUTPipeliningDiagnostic.m</a></TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:hdldisp:OversampleMessage" href="matlab:hilite(get_param(char([119 97 104 87 97 104 69 102 102 101 99 116]),'object'),'none');open_system(char([119 97 104 87 97 104 69 102 102 101 99 116]))">wahWahEffect</a>
+</TD>
+<TD>Message</TD>
+<TD>MESSAGE: The design requires 2048 times faster clock with respect to the base rate = 2.08333e-05.</TD>
+</TR>
+</TABLE>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                <ul class="footernav">
+                                    <li class="footernav_trademarks"><a href="C:/Program Files/MATLAB/R2022b/help/acknowledgments.html">Acknowledgments</a></li>
+                                    <li class="footernav_trademarks"><a href="C:/Program%20Files/MATLAB/R2022b/trademarks.txt">Trademarks</a></li>
+                                    <li class="footernav_patents"><a href="C:/Program%20Files/MATLAB/R2022b/patents.txt">Patents</a></li>
+                                    <li class="footernav_help"><a href="C:/Program Files/MATLAB/R2022b/license_agreement.txt">Terms of Use</a></li>
+                                </ul>
+                                <div class="copyright">&copy; 1994-2023 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+        </script>
+        
+</body>
+</html>

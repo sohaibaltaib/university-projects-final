@@ -1,0 +1,10 @@
+vlib work
+vcom  wahWahEffectSystem_pkg.vhd
+vcom  wahWahEffectSystem_tc.vhd
+vcom  Fc.vhd
+vcom  Q1.vhd
+vcom  Sine_HDL_Optimized.vhd
+vcom  F1.vhd
+vcom  stateVariableFilter.vhd
+vcom  wetDryMixer.vhd
+vcom  wahWahEffectSystem.vhd
