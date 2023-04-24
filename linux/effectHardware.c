@@ -50,8 +50,10 @@ void read_adc_reg(FILE *file){
 	ret = fseek(file, 0, SEEK_SET);
 
 	volume = p1_reg * 15;
+	delta = p5_reg;
 	minf = (800 * p3_reg)/4095;
 	maxf = p4_reg * 5;
+
 }
 
 void write_reg(FILE *file, uint32_t duty_0, uint32_t duty_1, uint32_t duty_2,uint32_t duty_3,uint32_t duty_4,uint32_t duty_5,uint32_t duty_6){
